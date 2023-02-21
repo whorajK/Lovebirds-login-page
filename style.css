@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* General Styles */
+html,
+body {
+  background: #52a6fa;
+  color: #282127;
+  height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #282127;
+}
+
+label {
+  color: #a4b99f;
+  font-size: 0.85rem;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  background: transparent;
+  border-bottom: 2px solid #a4b99f;
+  padding: 0.3rem 0.5rem;
+}
+
+button {
+  background: #282127;
+  color: #fefefe;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+button:hover {
+  opacity: 0.75;
+}
+
+/* Utitlity classes */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wrapper */
+.wrapper {
+  background-color: #fefefe;
+  width: max(799px, 290px);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.container--left {
+  background: #5f8d77;
+  background-image: url("img/bird.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  color: #fefefe;
+  justify-content: end;
+  padding: 3rem;
+}
+
+.container--left h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.container--left p {
+  font-size: 0.85rem;
+}
+
+/* login */
+.container--right {
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.container--right h1 {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.container--right h2 {
+  font-size: 1.2rem;
+  color: #a4b99f;
+  margin-bottom: 2rem;
+}
+
+.form {
+  gap: 2rem;
+  margin: 2rem auto;
+}
+
+.container--right small {
+  color: #a4b99f;
+}
+
+.google {
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 1rem auto;
+}
+
+.google img {
+  object-fit: contain;
+  width: 10%;
+}
+
+.container--right h4 {
+  color: #a4b99f;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 769px) {
+  body {
+    padding: 1rem;
+  }
+
+  .wrapper {
+    max-width: 400px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
